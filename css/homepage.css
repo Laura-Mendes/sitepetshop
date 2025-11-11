@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Poppins", san-serif;  
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.promo-banner {
+    background-color: #0cc0df; /* Cor de fundo do banner promocional */
+    color: #ffffff; /* Cor do texto do banner */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-bottom: 1px solid #ddd;
+}
+
+.promo-banner i {
+    font-size: 35px; /* Tamanho do ícone no banner */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    color: #0097b2;
+}
+
+.navbar {
+    background-color: #fff; /* Cor de fundo da navbar alterada para branco */
+    color: #000; /* Cor do texto da navbar alterada para preto */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Borda fina inferior para a navbar */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 90px;
+    margin-right: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 10px; /* Ajuste o espaço conforme necessário */
+}
+
+.search-container input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 170px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #7ed957; /* Cor de fundo do botão de pesquisa */
+    color: #fff; /* Cor do texto do botão de pesquisa */
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 250px;
+}
+
+.search {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: #0cc0df; 
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 35px; /* Tamanho do ícone aumentado */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.secondary-navbar {
+    background-color: #eeeeef; /* Cor de fundo da barra secundária */
+    border-bottom: 1px solid #ddd; /* Borda inferior da barra secundária */
+}
+
+.secondary-navbar-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os links */
+    padding: 10px 0;
+}
+
+.secondary-navbar-container a {
+    color: #333; /* Cor dos links na barra secundária */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.secondary-navbar-container a:hover {
+    text-decoration: underline;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1350px;
+  position: relative;
+  margin: auto;
+}
+
+.Slides {
+  display: none;
+}
+
+.Slides img {
+  border-radius: 17px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.244);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+  padding: 50px;
+}
+
+.card {
+  position: relative;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card h5 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+}
+
+.card span {
+  font-weight: bold;
+  color: #333;
+}
+
+.card button {
+  background: #7ed957;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative; 
+}
+
+.card button::after {
+  content: ""; 
+  visibility: hidden; 
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent; 
+}
+
+.card button:hover {
+  background: #53c323; 
+  color: transparent; 
+}
+
+.card button:hover::after {
+  content: "Adicionar ao carrinho"; 
+  visibility: visible; 
+  color: white; 
+}
+
+.rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ffa726;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cart-count:hover + .cart-dropdown {
+  display: block;
+}
+
+.cart-dropdown {
+  display: none;
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  z-index: 100;
+  margin-right: 15rem;
+}
+
+.cart-items {
+  margin: 10px 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 60px;
+  height: auto;
+}
+
+/* Limitar a largura do nome do produto e adicionar os '...' */
+.cart-item .product-details p {
+  white-space: nowrap;         /* Impede quebra de linha */
+  overflow: hidden;            /* Esconde o conteúdo que ultrapassar o limite */
+  text-overflow: ellipsis;     /* Adiciona '...' ao final do texto */
+  max-width: 100px;            /* Ajuste conforme o espaço disponível */
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.product-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.product-details p:last-child {
+  font-weight: bold;
+}
+
+/* Controles de quantidade */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #28c5cc;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+/* Subtotal do carrinho */
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Botão de finalizar compra */
+.finalizar-compra {
+  background-color: #ffa726;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #eeeeef;
+  color: #808080; /* Cor do texto */
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex; /* alinhados um ao lado do outro */
+  justify-content: space-between; 
+}
+
+.footer-content .links, 
+.footer-content .midias {
+  margin-top: 3rem;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  margin-left: 6.8rem;
+  font-size: 17px;
+  color: #333;
+}
+
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+  
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: #676666;
+  font-size: 15px;
+  margin-left: 70px;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo das mídias sociais e pagamentos */
+
+.footer-content .midias h4 {
+  margin-left: 10px; /* espaçamento em relação a linha vertical */
+ }
+
+.footer-content .midias {
+  margin-right: 2rem; 
+}
+
+ .social-icon {
+  display: inline-block; /* Permite que os ícones fiquem lado a lado */
+  margin: 10px; /* Espaçamento entre os ícones */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.icon-background {
+  display: flex; /* Alinha o ícone no centro */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #403f3f; /* Cor de fundo cinza escuro */
+  border-radius: 50%; /* Faz o fundo ser circular */
+  width: 40px; /* Largura do fundo circular */
+  height: 40px; /* Altura do fundo circular */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.icon-background i {
+  color: #d3d3d3; /* Cor cinza claro para o ícone */
+  font-size: 28px; /* Aumente o tamanho do ícone aqui */
+}
+
+.social-icon:hover .icon-background {
+  background-color: #555; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+.payment-icons {
+  display: flex; /* Exibe os ícones em linha */
+  justify-content: center; /* Centraliza os ícones */
+  margin-top: 10px; /* Espaçamento acima dos ícones de pagamento */
+  margin-right: 6rem;
+  justify-content: flex-start; /* Alinha os ícones à esquerda */
+}
+
+.payment-icon {
+  background-color: #ffffff;
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  margin: 10px; /* Espaçamento entre os ícones */
+  display: flex; /* Alinha o conteúdo do ícone no centro */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 55px; /* Largura fixa */
+  height: 35px; /* Altura fixa */
+  text-align: center;
+}
+
+.payment-icon img {
+  width: 100%; /* Mantém a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 50px; /* Define uma altura máxima para as imagens */
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  background-color: #c4c4c4;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #333333;
+  font-size: 14px;
+}
+
+/* Adaptar o layout do rodapé para telas pequenas, como as de smartphones e tablets. */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer-content .links,
+.footer-content .midias,
+.footer-content .pagamentos {
+  margin-bottom: 20px;
+}
+
+.vertical-line {
+  width: 2px; /* Largura da linha */
+  background-color: #e1e1e1; /* Cor da linha */
+  height: 10rem; /* Altura da linha - ajuste conforme necessário */
+  align-self: center; /* Centraliza a linha verticalmente em relação aos itens adjacentes */
+}
+
+/* logout css */
+.logout-btn {
+  color: white;
+  background-color: #7ed957;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #53c323;
+}
+
+/* Faça login */
+.login-message {
+  margin-left: 40px;
+}
+
+/* Email */
+.email-usuario {
+  margin-left: 40px
+}
+
+/* Container para centralizar tudo */
+.container-galeria {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* A imagem principal */
+.main-image img {
+  width: 100%; /* A imagem se ajusta ao tamanho da coluna */
+  max-width: 800px; /* Define um tamanho máximo maior para a imagem */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-bottom: 3px; /* Espaçamento entre a imagem e os thumbnails */
+}
+
+/* Estilo para os quadrados com os números abaixo da imagem */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Aumenta o espaçamento entre os thumbnails */
+  margin-top: 20px; /* Espaçamento entre a imagem e os thumbnails */
+}
+
+/* Cada quadrado (thumbnail) */
+.thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px; /* Tamanho maior para o número */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo do layout de uma linha */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  color: black;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para a seção de promoções */
+.promocoes {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.promocoes h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.promocoes p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.promo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.promo-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.promo-details h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.promo-details p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1rem;
+}
+
+.promo-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e22929;
+}
+
+.promo-card button {
+  background-color: #7ed957;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.promo-card button:hover {
+  background-color: #53c323;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.promo-card button {
+  position: relative;
+  display: inline-block;
+}
+
+.promo-card button::after {
+  content: ""; 
+  visibility: hidden;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent; 
+}
+
+.promo-card button:hover {
+  color: transparent; 
+}
+
+.promo-card button:hover::after {
+  content: "Adicionar ao carrinho"; 
+  visibility: visible; 
+  color: white; 
+}

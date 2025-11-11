@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilos Gerais */
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;  
+}
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+    margin: 0;
+}
+
+.logo-container {
+    position: fixed;
+    top: 20px; /* Distância do topo */
+    left: 70px; /* Distância da direita */
+    z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+.logo {
+    width: 190px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 100px; /* Ajuste para não sobrepor a imagem */
+}
+
+/* Abas de Login e Cadastro */
+.tab-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #f4f4f9;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background-color: #28c5cc;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Conteúdo dos formulários */
+.form-content {
+    display: none;
+}
+
+.form-content.active {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: #28c5cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #2196a4;
+}
+
+.message {
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+    text-align: center; /* Centraliza a mensagem */
+}
